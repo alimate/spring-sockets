@@ -11,7 +11,7 @@
     <packaging>jar</packaging>
 
     <name>sockets</name>
-    <description>WebScoket on Heroku</description>
+    <description>WebSocket on Heroku</description>
 
     <parent>
         <groupId>org.springframework.boot</groupId>
