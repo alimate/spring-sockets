@@ -7,6 +7,6 @@ import org.springframework.web.socket.handler.TextWebSocketHandler;
 public class EchoSocketHandler extends TextWebSocketHandler {
     @Override
     protected void handleTextMessage(WebSocketSession session, TextMessage message) throws Exception {
-        session.sendMessage(message);
+        session.sendMessage(new TextMessage(message.getPayload().toUpperCase()));
     }
 }
