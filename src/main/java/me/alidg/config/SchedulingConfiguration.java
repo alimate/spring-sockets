@@ -11,6 +11,9 @@ import org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler;
 public class SchedulingConfiguration {
     private static final int JUST_ONE_THREAD = 1;
 
+    /**
+     * Register a {@linkplain TaskScheduler} to run our push service task
+     */
     @Bean
     public TaskScheduler taskScheduler() {
         ThreadPoolTaskScheduler taskScheduler = new ThreadPoolTaskScheduler();

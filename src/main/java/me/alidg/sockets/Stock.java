@@ -53,7 +53,7 @@ class Stock {
      *
      * @return The json
      */
-    public String toJson() {
+    String toJson() {
         try {
             return MAPPER.writeValueAsString(this);
         } catch (JsonProcessingException e) {
@@ -66,7 +66,7 @@ class Stock {
      *
      * @return A random stock instance
      */
-    public static Stock randomStockUpdate() {
+    static Stock randomStockUpdate() {
         Random random = new Random();
         String symbol = SYMBOLS.get(random.nextInt(SYMBOLS.size()));
         double value = random.nextDouble();
