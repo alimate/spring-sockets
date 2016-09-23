@@ -7,8 +7,11 @@ Every three seconds, the `/stocks` endpoint pushes a random stock update with th
     { "symbol": "symbol_name", "value": val }
     
 ### How to run it locally?
-Just use the following command and your service would be accessible at `ws://localhost:8080/stocks`:
+Just use the following command on Linux/Mac and your service would be accessible at `ws://localhost:8080/stocks`:
 
-    mvnw spring-boot:run
+    ./mvnw spring-boot:run
+And this if your're using a windows machine:
+
+    mvnw.cmd spting-boot:run
 
 [heroku-sleeping]: https://blog.heroku.com/app_sleeping_on_heroku
