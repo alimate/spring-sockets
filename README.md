@@ -1,5 +1,5 @@
 # Fictional Trades Push Service with Spring WebSocket
-It's a fictional financial WebSocket service that pushes random and fake stock updates to every open session every three seconds. It's currently accessible at `ws://spring-sockets.herokuapp.com/stocks`. There may be [wake up call][heroku-sleeping] for this app, so be patient if you're using it.
+It's a fictional financial WebSocket service that pushes random and fake stock updates to every open session every three seconds. It's currently accessible at `wss://spring-sockets.herokuapp.com/stocks`. There may be [wake up call][heroku-sleeping] for this app, so be patient if you're using it.
 
 ### Message format
 Every three seconds, the `/stocks` endpoint pushes a random stock update with the following schema to all open sessions:
