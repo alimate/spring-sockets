@@ -12,6 +12,6 @@ Just use the following command on Linux/Mac and your service would be accessible
     ./mvnw spring-boot:run
 And this if your're using a windows machine:
 
-    mvnw.cmd spting-boot:run
+    mvnw.cmd spring-boot:run
 
 [heroku-sleeping]: https://blog.heroku.com/app_sleeping_on_heroku
